@@ -1,0 +1,61 @@
+# ----------------------------------
+# Node (Angular)
+# ----------------------------------
+node_modules/
+dist/
+tmp/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.env
+
+# Angular environment files (si usas distintos para prod/dev)
+src/environments/environment.*.ts
+
+# ----------------------------------
+# .NET / C# / Web API
+# ----------------------------------
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vsp
+*.vspscc
+*.vssscc
+*.dbmdl
+*.pdb
+*.cache
+*.log
+*.vs/
+*.ide/
+*.ncrunch*
+_ReSharper*/
+.vscode/
+*.DotSettings.user
+project.lock.json
+project.fragment.lock.json
+
+# Visual Studio Code
+.vscode/
+
+# ----------------------------------
+# OS & Editor
+# ----------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------------
+# Git config files (opcionales)
+# ----------------------------------
+*.orig
+
+# ----------------------------------
+# IIS Express
+# ----------------------------------
+.vs/
+.vsconfig
+*.launchSettings.json
