@@ -25,5 +25,19 @@ namespace BACKEND.Controladores
 
             return Ok(resultado);
         }
+
+        [HttpPost("BuscarLibroPorTitulo")]
+        public IActionResult BuscarLibroPorTitulo([FromBody] LibroBarraDTO libro)
+        {
+            try
+            {
+                var respuesta = servicio.BuscarLibroPorTitulo(libro);
+                return Ok(respuesta);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
